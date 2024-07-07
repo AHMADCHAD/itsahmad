@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+</head>
+
+
 <head>
 
   <style>
@@ -30,7 +37,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Google Fonts -->
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -50,13 +57,16 @@
 
 <body>
 
+
+
+
   <header id="header" class="d-flex flex-column justify-content-center">
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="./assets/pdf/AHMAD_REACT_NATIVE.pdf" target="_blank" class="nav-link scrollto"><i
+        <li><a href="./assets/pdf/Ahmad_Resume.pdf" target="_blank" class="nav-link scrollto"><i
               class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
         </li>
@@ -325,8 +335,9 @@
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">App</li>
+              <li data-filter="*" class="filter-active">All</li>
+              
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
@@ -341,14 +352,18 @@
                 <h4>Hitec Booking</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/video.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="Hitec Booking"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="https://drive.google.com/file/d/1i_E9jjjqhQEl6Wc4O0U7EFdHIpjL_YmF/preview" data-fancybox="gallery" data-caption="Hitec Booking">
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
+                    <i class="bx bx-link"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+          
+
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -385,19 +400,25 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/appproj2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/appproj2.jpg" class="img-fluid" alt="App Project Image">
               <div class="portfolio-info">
                 <h4>Hitec Universe</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/hitecuniverse.mp4" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Hitec Universe"><i class="bx bx-plus"></i></a>
+                  <a href="https://drive.google.com/file/d/1b28_P6OlvN5HqSqkNZFKXcHcS9xQ2kE8/preview"
+                    data-fancybox="gallery" data-caption="Hitec Universe">
+                    <i class="bx bx-plus"></i>
+                  </a>
                   <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    title="Portfolio Details">
+                    <i class="bx bx-link"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+
+
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
@@ -406,14 +427,19 @@
                 <h4>Tap Rapid</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/taprapid.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="Tap Rapid"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="https://drive.google.com/file/d/1ZGGCpuYKlruAXEcVvBFhlESi6FhUotrP/preview" data-fancybox="gallery" data-caption="TapRapid">
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
+                    <i class="bx bx-link"></i>
+                  </a>
                 </div>
+                
               </div>
             </div>
           </div>
+          
+          
 
 
         </div>
@@ -497,6 +523,29 @@
         class="bi bi-arrow-up-short"></i></a> -->
 
     <!-- Vendor JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.umd.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.portfolio-links a[data-fancybox]').forEach(link => {
+          link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const title = link.getAttribute('data-caption');
+            Fancybox.show([{
+              src: link.href,
+              type: "iframe",
+              caption: title
+            }]);
+          });
+        });
+      });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Custom options can be added here
+      });
+    </script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
