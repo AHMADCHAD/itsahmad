@@ -371,9 +371,31 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/appproj.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/tallah.png" class="img-fluid" alt="">
+              <div class="project-type-icon" data-project-name="tallah"><i class="bi bi-phone"></i></div>
+              <div class="portfolio-info">
+                <h4>Tallah</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="https://drive.google.com/file/d/1i_E9jjjqhQEl6Wc4O0U7EFdHIpjL_YmF/preview"
+                    data-lightbox="gallery" data-title="Hitec Booking">
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a href="portfolio-details.html" data-title="Portfolio Details">
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/hitecUniverse.jpg" class="img-fluid" alt="">
+              <div class="project-type-icon" data-project-name="hitecUniverse"><i class="bi bi-phone"></i></div>
               <div class="portfolio-info">
                 <h4>Hitec Booking</h4>
                 <p>App</p>
@@ -393,6 +415,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/skillbot.jpeg" class="img-fluid" alt="">
+              <div class="project-type-icon" data-project-name="skillbot"><i class="bi bi-phone"></i></div>
               <div class="portfolio-info">
                 <h4>SkillBot</h4>
                 <p>App</p>
@@ -411,12 +434,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/webproj.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/tagout.jpg" class="img-fluid" alt="">
+              <div class="project-type-icon" data-project-name="tagout"><i class="bi bi-globe"></i></div>
               <div class="portfolio-info">
                 <h4>Ecommerce Website Using Figma</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/webproj.jpg" data-lightbox="gallery"
+                  <a href="assets/img/portfolio/tagout.jpg" data-lightbox="gallery"
                     data-title="Website Design Using Figma">
                     <i class="bx bx-plus"></i>
                   </a>
@@ -430,12 +454,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/itsahmad.jpg" class="img-fluid" alt="">
+              <div class="project-type-icon" data-project-name="itsahmad"><i class="bi bi-globe"></i></div>
               <div class="portfolio-info">
                 <h4>My Portfolio</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio.jpg" data-lightbox="gallery" data-title="My Portfolio">
+                  <a href="assets/img/portfolio/itsahmad.jpg" data-lightbox="gallery" data-title="My Portfolio">
                     <i class="bx bx-plus"></i>
                   </a>
                   <a href="portfolio-details.html" data-title="Portfolio Details">
@@ -448,7 +473,8 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/appproj2.jpg" class="img-fluid" alt="App Project Image">
+              <img src="assets/img/portfolio/hitecBooking.jpg" class="img-fluid" alt="App Project Image">
+              <div class="project-type-icon" data-project-name="hitecBooking"><i class="bi bi-phone"></i></div>
               <div class="portfolio-info">
                 <h4>Hitec Universe</h4>
                 <p>App</p>
@@ -468,6 +494,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/taprapid.jpg" class="img-fluid" alt="">
+              <div class="project-type-icon" data-project-name="taprapid"><i class="bi bi-phone"></i></div>
               <div class="portfolio-info">
                 <h4>Tap Rapid</h4>
                 <p>App</p>
@@ -607,6 +634,30 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const iconContainers = document.querySelectorAll('.project-type-icon');
+        const iconExtensions = ['svg', 'png', 'jpg']; // Check for different extensions
+
+        iconContainers.forEach(container => {
+          const projectName = container.dataset.projectName;
+          if (projectName) {
+            let iconFound = false;
+            iconExtensions.forEach(ext => {
+              if (!iconFound) {
+                const iconUrl = `assets/img/icons/${projectName}.${ext}`;
+                const img = new Image();
+                img.src = iconUrl;
+                img.onload = function () {
+                  container.innerHTML = `<img src="${iconUrl}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">`;
+                  iconFound = true;
+                };
+              }
+            });
+          }
+        });
+      });
+    </script>
 
 </body>
 
