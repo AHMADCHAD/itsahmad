@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
-
 </head>
 
 
@@ -85,17 +79,21 @@
 
 
   <section id="hero" class="d-flex flex-column justify-content-center">
+    <div id="tsparticles"></div> <!-- This is for the particle background -->
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 style="font-family: montserrat;">Ahmad Hassan</h1>
-      <p>I'm <span class="typed" data-typed-items="React Native Developer, React Developer, Software Engineer"></span>
-      </p>
-      <div class="social-links" style="font-family: montserrat;">
-        <a href="https://www.facebook.com/profile.php?id=100030653596882&mibextid=ZbWKwL" target="_blank"
-          class="facebook" style="color:#4fb8fd; opacity: 0.4;"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/ahmad____hassan1/" target="_blank" class="instagram"><i
-            class="bx bxl-instagram" style="color:#4fb8fd; opacity: 0.4;"></i></a>
-        <a href="https://www.linkedin.com/in/ahmad-hassan-52b672243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          target="_blank" class="linkedin"><i class="bx bxl-linkedin" style="color:#4fb8fd; opacity: 0.4;"></i></a>
+      <div class="row align-items-center">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 style="font-family: montserrat;">Ahmad Hassan</h1>
+          <p>I'm a <span class="typed" data-typed-items="React Native Developer, React Developer, Software Engineer"></span></p>
+          <div class="social-links" style="font-family: montserrat;">
+            <a href="https://www.facebook.com/profile.php?id=100030653596882&mibextid=ZbWKwL" target="_blank" class="facebook" style="color:#4fb8fd; opacity: 0.4;"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/ahmad____hassan1/" target="_blank" class="instagram"><i class="bx bxl-instagram" style="color:#4fb8fd; opacity: 0.4;"></i></a>
+            <a href="https://www.linkedin.com/in/ahmad-hassan-52b672243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin"><i class="bx bxl-linkedin" style="color:#4fb8fd; opacity: 0.4;"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center">
+          <img src="assets/img/ahmad2.png" class="img-fluid hero-img" alt="">
+        </div>
       </div>
     </div>
   </section>
@@ -110,37 +108,29 @@
           font-size: 25px;
           font-family: montserrat;
           color: #08b4fc">About</h2>
-          <p style="color:#ccc; font-family:montserrat; font-size: 15px;">I'm a Software Engineering student studying in
-            final semeset as of now. I'm a freelance app developer.
-          </p>
         </div>
 
         <div class="row">
-          <div class="col-lg-3 px-3 px-lg-0">
-            <img src="assets/img/ahmad2.png" style="border-top-right-radius: 70px; border-bottom-left-radius: 70px;"
-              class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-sm-2 mt-sm-5 mx-3 content p-0 p-lg-2"
-            style="color:#ccc; font-family:montserrat;font-size: 30; text-align: start;">
-            <h3 class="mt-5 mt-lg-5 mb-4 mb-lg-4 headingFont fs-4 mx-3 fs-lg-5 "
-              style="color: #fc9508;font-size:30px ; font-family: montserrat; letter-spacing: 0.09ex;">React & React
-              Native Developer</h3>
-
-
-            <div class="col-lg-7">
-
-              <ul class="list-unstyled aboutlist" style="font-size:15px ;">
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+92 335 7700755</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Islamabad</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BS Software Engineering</span>
-                </li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                  <span><a href="">ahmadhassanchadhar11@gmail.com</a></span>
-                </li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-              </ul>
-              <!-- <p style="text-align:left; margin-right:25px; font-size: large;">Embark on a visual voyage – where pixels tell stories and designs evoke emotions. Join me in exploring the limitless possibilities of creativity. Your vision, my craft – let's create magic together.</p> -->
+          <div class="col-lg-8 offset-lg-2" style="color:#ccc; font-family:montserrat; text-align: center;">
+            <h3 class="mb-4" style="color: #fc9508; font-family: montserrat; letter-spacing: 0.09ex;">React & React Native Developer</h3>
+            <p class="about-text">
+              I'm a final semester Software Engineering student and a passionate freelance app developer. With a strong foundation in mobile and web technologies, I specialize in creating dynamic and responsive applications using React Native and React.
+            </p>
+            <div class="row mt-4 pt-3 text-start">
+              <div class="col-md-6">
+                <ul class="list-unstyled aboutlist">
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BS Software Engineering</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+92 335 7700755</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Islamabad, Pakistan</span></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled aboutlist">
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ahmadhassanchadhar11@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -371,151 +361,257 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/tallah.png" class="img-fluid" alt="">
-              <div class="project-type-icon" data-project-name="tallah"><i class="bi bi-phone"></i></div>
-              <div class="portfolio-info">
-                <h4>Tallah</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="https://drive.google.com/file/d/1i_E9jjjqhQEl6Wc4O0U7EFdHIpjL_YmF/preview"
-                    data-lightbox="gallery" data-title="Hitec Booking">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="portfolio-details.html" data-title="Portfolio Details">
-                    <i class="bx bx-link"></i>
-                  </a>
+          <!-- Project 1: Tallah -->
+          <div class="col-lg-12 portfolio-item filter-app" data-aos="fade-up">
+            <div class="portfolio-wrap-new">
+              <div class="row">
+                <div class="col-md-8">
+                  <img src="assets/img/portfolio/tallah.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4 portfolio-info-new">
+                  <h3>Tallah</h3>
+                  <p class="fst-italic">A React Native application for connecting users with tailors.</p>
+                  <div class="project-tags">
+                    <span class="tag">React Native</span><span class="tag">Firebase</span>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal-tallah">View Project</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/hitecUniverse.jpg" class="img-fluid" alt="">
-              <div class="project-type-icon" data-project-name="hitecUniverse"><i class="bi bi-phone"></i></div>
-              <div class="portfolio-info">
-                <h4>Hitec Booking</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="https://drive.google.com/file/d/1i_E9jjjqhQEl6Wc4O0U7EFdHIpjL_YmF/preview"
-                    data-lightbox="gallery" data-title="Hitec Booking">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="portfolio-details.html" data-title="Portfolio Details">
-                    <i class="bx bx-link"></i>
-                  </a>
+          <!-- Project 2: Hitec Booking -->
+          <div class="col-lg-12 portfolio-item filter-app" data-aos="fade-up">
+            <div class="portfolio-wrap-new">
+              <div class="row align-items-center">
+                <div class="col-md-8 order-md-2">
+                  <img src="assets/img/portfolio/hitecUniverse.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4 order-md-1 portfolio-info-new text-md-end">
+                  <h3>Hitec Booking</h3>
+                  <p class="fst-italic">An app for booking services within the Hitec University.</p>
+                  <div class="project-tags">
+                    <span class="tag">React Native</span>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal-hitec-booking">View Project</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/skillbot.jpeg" class="img-fluid" alt="">
-              <div class="project-type-icon" data-project-name="skillbot"><i class="bi bi-phone"></i></div>
-              <div class="portfolio-info">
-                <h4>SkillBot</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="https://drive.google.com/file/d/1u1Qm3UDTDZpG0dO7TtASB4gZrNw-S9m3/view?usp=sharing"
-                    data-lightbox="gallery" data-title="SkillBot">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="portfolio-details.html" data-title="Portfolio Details">
-                    <i class="bx bx-link"></i>
-                  </a>
+          <!-- Project 3: SkillBot -->
+          <div class="col-lg-12 portfolio-item filter-app" data-aos="fade-up">
+            <div class="portfolio-wrap-new">
+              <div class="row">
+                <div class="col-md-8">
+                  <img src="assets/img/skillbot.jpeg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4 portfolio-info-new">
+                  <h3>SkillBot</h3>
+                  <p class="fst-italic">An educational chatbot application to help users learn new skills.</p>
+                  <div class="project-tags">
+                    <span class="tag">React Native</span>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal-skillbot">View Project</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/tagout.jpg" class="img-fluid" alt="">
-              <div class="project-type-icon" data-project-name="tagout"><i class="bi bi-globe"></i></div>
-              <div class="portfolio-info">
-                <h4>Ecommerce Website Using Figma</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/tagout.jpg" data-lightbox="gallery"
-                    data-title="Website Design Using Figma">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="portfolio-details.html" data-title="Portfolio Details">
-                    <i class="bx bx-link"></i>
-                  </a>
+          <!-- Project 4: Ecommerce Design -->
+          <div class="col-lg-12 portfolio-item filter-web" data-aos="fade-up">
+            <div class="portfolio-wrap-new">
+              <div class="row align-items-center">
+                <div class="col-md-8 order-md-2">
+                  <img src="assets/img/portfolio/tagout.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4 order-md-1 portfolio-info-new text-md-end">
+                  <h3>Ecommerce Website Design</h3>
+                  <p class="fst-italic">A modern UI/UX design for an e-commerce platform.</p>
+                  <div class="project-tags">
+                    <span class="tag">Figma</span><span class="tag">UI/UX</span>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal-tagout">View Design</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/itsahmad.jpg" class="img-fluid" alt="">
-              <div class="project-type-icon" data-project-name="itsahmad"><i class="bi bi-globe"></i></div>
-              <div class="portfolio-info">
-                <h4>My Portfolio</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/itsahmad.jpg" data-lightbox="gallery" data-title="My Portfolio">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="portfolio-details.html" data-title="Portfolio Details">
-                    <i class="bx bx-link"></i>
-                  </a>
+          <!-- Project 5: Personal Portfolio -->
+          <div class="col-lg-12 portfolio-item filter-web" data-aos="fade-up">
+            <div class="portfolio-wrap-new">
+              <div class="row">
+                <div class="col-md-8">
+                  <img src="assets/img/portfolio/itsahmad.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4 portfolio-info-new">
+                  <h3>Personal Portfolio</h3>
+                  <p class="fst-italic">My personal portfolio website to showcase my skills and projects.</p>
+                  <div class="project-tags">
+                    <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal-itsahmad">View Screenshot</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/hitecBooking.jpg" class="img-fluid" alt="App Project Image">
-              <div class="project-type-icon" data-project-name="hitecBooking"><i class="bi bi-phone"></i></div>
-              <div class="portfolio-info">
-                <h4>Hitec Universe</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="https://drive.google.com/file/d/19NS7uEzfg8dmQp3R7XMvNrF3PbrNVkYC/preview"
-                    data-lightbox="gallery" data-title="Hitec Universe">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="portfolio-details.html" data-title="Portfolio Details">
-                    <i class="bx bx-link"></i>
-                  </a>
+          <!-- Project 6: Hitec Universe -->
+          <div class="col-lg-12 portfolio-item filter-app" data-aos="fade-up">
+            <div class="portfolio-wrap-new">
+              <div class="row align-items-center">
+                <div class="col-md-8 order-md-2">
+                  <img src="assets/img/portfolio/hitecBooking.jpg" class="img-fluid" alt="App Project Image">
+                </div>
+                <div class="col-md-4 order-md-1 portfolio-info-new text-md-end">
+                  <h3>Hitec Universe</h3>
+                  <p class="fst-italic">A comprehensive university portal application.</p>
+                  <div class="project-tags">
+                    <span class="tag">React Native</span>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal-hitec-universe">View Project</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/taprapid.jpg" class="img-fluid" alt="">
-              <div class="project-type-icon" data-project-name="taprapid"><i class="bi bi-phone"></i></div>
-              <div class="portfolio-info">
-                <h4>Tap Rapid</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="https://drive.google.com/file/d/1ZGGCpuYKlruAXEcVvBFhlESi6FhUotrP/preview"
-                    data-lightbox="gallery" data-title="Tap Rapid">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="portfolio-details.html" data-title="Portfolio Details">
-                    <i class="bx bx-link"></i>
-                  </a>
+          <!-- Project 7: Tap Rapid -->
+          <div class="col-lg-12 portfolio-item filter-app" data-aos="fade-up">
+            <div class="portfolio-wrap-new">
+              <div class="row">
+                <div class="col-md-8">
+                  <img src="assets/img/portfolio/taprapid.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4 portfolio-info-new">
+                  <h3>Tap Rapid</h3>
+                  <p class="fst-italic">A fun and addictive tapping game.</p>
+                  <div class="project-tags">
+                    <span class="tag">React Native</span><span class="tag">Game</span>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal-taprapid">View Project</button>
                 </div>
               </div>
             </div>
           </div>
-
-
-
-
 
         </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="projectModal-tallah" tabindex="-1" aria-labelledby="projectModalLabel-tallah" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel-tallah">Tallah</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>A React Native application for connecting users with tailors, featuring user authentication, tailor profiles, and booking functionalities with Firebase integration.</p>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://drive.google.com/file/d/1i_E9jjjqhQEl6Wc4O0U7EFdHIpjL_YmF/preview" allow="autoplay"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="projectModal-hitec-booking" tabindex="-1" aria-labelledby="projectModalLabel-hitec-booking" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel-hitec-booking">Hitec Booking</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>An app for booking services within the Hitec University. Users can view available slots and book various university facilities.</p>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://drive.google.com/file/d/19NS7uEzfg8dmQp3R7XMvNrF3PbrNVkYC/preview" allow="autoplay"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="projectModal-skillbot" tabindex="-1" aria-labelledby="projectModalLabel-skillbot" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel-skillbot">SkillBot</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>An educational chatbot application to help users learn new skills through interactive conversations and guided paths.</p>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://drive.google.com/file/d/1u1Qm3UDTDZpG0dO7TtASB4gZrNw-S9m3/preview" allow="autoplay"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="projectModal-tagout" tabindex="-1" aria-labelledby="projectModalLabel-tagout" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel-tagout">Ecommerce Website Design</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>A modern UI/UX design for an e-commerce platform, created using Figma. The design focuses on a clean user interface and intuitive navigation.</p>
+                <img src="assets/img/portfolio/tagout.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="projectModal-itsahmad" tabindex="-1" aria-labelledby="projectModalLabel-itsahmad" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel-itsahmad">Personal Portfolio</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>My personal portfolio website to showcase my skills and projects, built with HTML, CSS, and Bootstrap.</p>
+                <img src="assets/img/portfolio/itsahmad.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="projectModal-hitec-universe" tabindex="-1" aria-labelledby="projectModalLabel-hitec-universe" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel-hitec-universe">Hitec Universe</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>A comprehensive university portal application for students and faculty, providing access to timetables, schedules, and other university information.</p>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://drive.google.com/file/d/19NS7uEzfg8dmQp3R7XMvNrF3PbrNVkYC/preview" allow="autoplay"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="projectModal-taprapid" tabindex="-1" aria-labelledby="projectModalLabel-taprapid" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel-taprapid">Tap Rapid</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>A fun and addictive tapping game built with React Native, designed to test and improve user response times.</p>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://drive.google.com/file/d/1ZGGCpuYKlruAXEcVvBFhlESi6FhUotrP/preview" allow="autoplay"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </section><!-- End Portfolio Section -->
@@ -596,29 +692,6 @@
         class="bi bi-arrow-up-short"></i></a> -->
 
     <!-- Vendor JS Files -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.umd.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.portfolio-links a[data-fancybox]').forEach(link => {
-          link.addEventListener('click', (event) => {
-            event.preventDefault();
-            const title = link.getAttribute('data-caption');
-            Fancybox.show([{
-              src: link.href,
-              type: "iframe",
-              caption: title
-            }]);
-          });
-        });
-      });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-    <script>
-      Fancybox.bind("[data-fancybox]", {
-        // Custom options can be added here
-      });
-    </script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -626,36 +699,81 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
 
 
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const iconContainers = document.querySelectorAll('.project-type-icon');
-        const iconExtensions = ['svg', 'png', 'jpg']; // Check for different extensions
 
-        iconContainers.forEach(container => {
-          const projectName = container.dataset.projectName;
-          if (projectName) {
-            let iconFound = false;
-            iconExtensions.forEach(ext => {
-              if (!iconFound) {
-                const iconUrl = `assets/img/icons/${projectName}.${ext}`;
-                const img = new Image();
-                img.src = iconUrl;
-                img.onload = function () {
-                  container.innerHTML = `<img src="${iconUrl}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">`;
-                  iconFound = true;
-                };
+    <script>
+      tsParticles.load("tsparticles", {
+        fpsLimit: 60,
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "grab"
+            },
+            onClick: {
+              enable: true,
+              mode: "push"
+            },
+            resize: true
+          },
+          modes: {
+            push: {
+              quantity: 4
+            },
+            grab: {
+              distance: 200,
+              links: {
+                opacity: 0.5
               }
-            });
+            }
           }
-        });
+        },
+        particles: {
+          color: {
+            value: "#ffffff"
+          },
+          links: {
+            color: "#ffffff",
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1
+          },
+          collisions: {
+            enable: true
+          },
+          move: {
+            direction: "none",
+            enable: true,
+            outModes: "bounce",
+            random: false,
+            speed: 2,
+            straight: false
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 800
+            },
+            value: 80
+          },
+          opacity: {
+            value: 0.5
+          },
+          shape: {
+            type: "circle"
+          },
+          size: {
+            value: { min: 1, max: 5 }
+          }
+        },
+        detectRetina: true
       });
     </script>
 
