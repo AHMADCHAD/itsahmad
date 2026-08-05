@@ -1,5 +1,9 @@
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -186,16 +190,6 @@ h6 {
   background-position: left;
 }
 
-/* Media query for screens with a maximum width of 580px */
-/* @media (max-width: 580px) {
-  #hero {
-    background: url("../img/edit3.jpg") top right no-repeat;
-    background-size: cover;
-    background-position: left;
-    opacity: 0px;
-  }
-} */
-
 @media (min-width: 992px) {
   #hero {
     padding-left: 50px;
@@ -246,33 +240,19 @@ h6 {
 }
 
 #hero .social-links a {
-  font-size: 30px;
+  font-size: 34px;
   display: inline-flex;
   align-items: center;
   line-height: 1;
   transition: 0.3s;
-}
-
-#hero .social-links a.whatsapp {
-  color: #25d366;
-}
-
-#hero .social-links a.facebook {
-  color: #3b82f6;
-}
-
-#hero .social-links a.instagram {
-  color: #e1306c;
-}
-
-#hero .social-links a.linkedin {
-  color: #0a66c2;
+  color: #4da6ff;
+  opacity: 0.75;
 }
 
 #hero .social-links a:hover {
   color: #ffffff;
-  transform: translateY(-3px);
-  text-shadow: 0 0 12px rgba(77, 166, 255, 0.6);
+  opacity: 1;
+  transform: translateY(-3px) scale(1.1);
 }
 
 #hero .hero-img {
@@ -428,13 +408,28 @@ section {
   font-size: 22px;
 }
 
-.about-intro .about-heading {
-  color: #e8e8e8;
+.about-subtitle {
+  display: block;
+  color: #4da6ff;
   font-family: "montserrat", sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.05ex;
-  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.15ex;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.about-intro .about-heading {
+  color: #ffffff;
+  font-family: "montserrat", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 0.02ex;
+  margin-bottom: 12px;
+}
+
+.about-name-accent {
+  color: #4da6ff;
 }
 
 .about-intro .about-bio {
@@ -443,8 +438,47 @@ section {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
+}
+
+.about-intro .about-bio strong {
+  color: #4da6ff;
+  font-weight: 700;
+}
+
+.about-facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.about-fact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #161616;
+  border: 1px solid #2d2d2d;
+  color: #cccccc;
+  font-family: "montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.about-fact-item i {
+  color: #4da6ff;
+  font-size: 18px;
+}
+
+.about-fact-item:hover {
+  border-color: #4da6ff;
+  color: #ffffff;
+  transform: translateY(-3px);
 }
 
 /* Personal info grid */
@@ -635,7 +669,7 @@ section {
 
 @media (max-width: 991px) {
   .about-intro .about-heading {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .about-role-badge {
@@ -708,125 +742,43 @@ section {
   background-color: #000000;
 }
 
-.skills-wrap {
+.skills-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 24px 50px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.skill-card {
-  background: #161616;
-  border: 1px solid #2d2d2d;
-  border-radius: 16px;
-  padding: 20px 22px;
-  transition: 0.3s;
+.skill-item {
+  margin-bottom: 8px;
 }
 
-.skill-card:hover {
-  border-color: #4da6ff;
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(77, 166, 255, 0.12);
-}
-
-.skill-card-head {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 16px;
-}
-
-.skill-icon {
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(77, 166, 255, 0.1);
-  border: 1px solid rgba(77, 166, 255, 0.25);
-  border-radius: 12px;
-  color: #4da6ff;
-  font-size: 24px;
-}
-
-.skill-card:hover .skill-icon {
-  background: #4da6ff;
-  color: #000;
-}
-
-.skill-meta {
-  flex: 1;
-}
-
-.skill-meta h4 {
+.skill-name {
+  display: block;
   color: #e8e8e8;
   font-family: "montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0 0 4px 0;
-}
-
-.skill-pill {
-  display: inline-block;
-  color: #9a9a9a;
-  font-family: "montserrat", sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05ex;
-  border: 1px solid #3a3a3a;
-  padding: 2px 10px;
-  border-radius: 50px;
-}
-
-.skill-percent {
-  color: #4da6ff;
-  font-family: "montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
+  margin-bottom: 8px;
 }
 
 .skill-bar {
-  height: 8px;
+  height: 6px;
   background: #2d2d2d;
   border-radius: 50px;
   overflow: hidden;
 }
 
 .skill-bar-fill {
+  display: block;
   height: 100%;
   border-radius: 50px;
   background: linear-gradient(90deg, #4da6ff, #7ec1ff);
-  position: relative;
-  overflow: hidden;
-}
-
-.skill-bar-glow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 40px;
-  background: rgba(255, 255, 255, 0.35);
-  transform: skewX(-20deg);
-  animation: skill-shine 2.5s ease-in-out infinite;
-}
-
-@keyframes skill-shine {
-  0% {
-    left: -50px;
-  }
-
-  60%,
-  100% {
-    left: 110%;
-  }
 }
 
 @media (max-width: 767px) {
-  .skills-wrap {
+  .skills-list {
     grid-template-columns: 1fr;
   }
 }
@@ -1580,59 +1532,23 @@ section {
 }
 
 .contact-info-icon {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(77, 166, 255, 0.12);
-  border-radius: 50%;
+  background: rgba(77, 166, 255, 0.1);
   color: #4da6ff;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
 .contact-info-item:hover .contact-info-icon {
-  transform: scale(1.08);
-}
-
-/* Per-icon brand colors */
-.contact-info-icon.icon-phone {
-  background: rgba(77, 166, 255, 0.12);
-  color: #4da6ff;
-  border: 2px solid rgba(77, 166, 255, 0.5);
-}
-
-.contact-info-icon.icon-whatsapp {
-  background: rgba(37, 211, 102, 0.12);
-  color: #25d366;
-  border: 2px solid rgba(37, 211, 102, 0.5);
-}
-
-.contact-info-icon.icon-location {
-  background: rgba(252, 149, 8, 0.12);
-  color: #fc9508;
-  border: 2px solid rgba(252, 149, 8, 0.5);
-}
-
-.contact-info-icon.icon-email {
-  background: rgba(255, 87, 34, 0.12);
-  color: #ff5722;
-  border: 2px solid rgba(255, 87, 34, 0.5);
-}
-
-.contact-info-icon.icon-freelance {
-  background: rgba(156, 39, 176, 0.12);
-  color: #9c27b0;
-  border: 2px solid rgba(156, 39, 176, 0.5);
-}
-
-.contact-info-icon.icon-linkedin {
-  background: rgba(0, 119, 181, 0.12);
-  color: #0a66c2;
-  border: 2px solid rgba(0, 119, 181, 0.5);
+  background: #4da6ff;
+  color: #000;
 }
 
 .contact-info-text {
