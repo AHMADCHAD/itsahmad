@@ -15,7 +15,7 @@
 11. [x] Display each project as a full-width row (image left, content right)
 12. [x] Replace modal/page details with inline expandable details
 13. [x] Fix All/Apps filter switching (simple show/hide preserving full-width rows)
-14. [x] Replace Hitec Booking with Shagf (Fitness Coach Booking App) keeping same image
+14. [x] Replace Hitec Booking with Shagf (Fitness Coach Booking App) keeping same imagee
 15. [x] Add multi-image slider support; add two images to Shagf with autoplay, arrows, and dots
 16. [x] Adjust portfolio image sizing for 2000x1250 (16:10 aspect ratio)
 17. [x] Remove the "App" tag chip from portfolio cards
