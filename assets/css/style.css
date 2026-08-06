@@ -143,41 +143,10 @@ h6 {
   display: block;
 }
 
-/**
-* Mobile Navigation
-*/
-.mobile-nav-toggle {
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  z-index: 9998;
-  border: 0;
-  background: none;
-  font-size: 28px;
-  transition: all 0.4s;
-  outline: none !important;
-  line-height: 0;
-  cursor: pointer;
-  border-radius: 50px;
-  padding: 5px;
-}
-
-.mobile-nav-toggle i {
-  color: #45505b;
-}
-
-.mobile-nav-active {
-  overflow: hidden;
-}
-
-.mobile-nav-active #header {
-  left: 0;
-}
-
-.mobile-nav-active .mobile-nav-toggle {
-  color: #fff;
-  background-color: #0563bb;
-}
+/* Mobile navigation removed – no toggle required */
+.mobile-nav-toggle { display: none !important; }
+.mobile-nav-active { overflow: auto; }
+.mobile-nav-active #header { left: 0; }
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -924,7 +893,8 @@ section {
 
 .portfolio-card:hover {
   border-color: #4da6ff;
-  box-shadow: 0 15px 35px rgba(77, 166, 255, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(77, 166, 255, 0.15);
 }
 
 .portfolio-thumb {
@@ -1092,6 +1062,20 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
+}
+
+/* Title + tools in one row */
+.portfolio-head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
+.portfolio-head-row .portfolio-title-block {
+  min-width: 0;
 }
 
 .portfolio-tag {
@@ -1112,9 +1096,9 @@ section {
 .portfolio-card-body h4 {
   color: #e8e8e8;
   font-family: "montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  margin: 0 0 6px 0;
+  margin: 0 0 4px 0;
 }
 
 .portfolio-card-body p {
@@ -1124,44 +1108,122 @@ section {
   margin: 0;
 }
 
-/* Expandable details */
-.portfolio-expand-btn {
-  margin-top: 14px;
+/* Tools used (original brand icons) - top right beside title */
+.portfolio-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.portfolio-tool {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
   background: transparent;
-  border: 1px solid rgba(77, 166, 255, 0.4);
-  color: #4da6ff;
-  font-family: "montserrat", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04ex;
-  padding: 9px 18px;
-  border-radius: 50px;
-  cursor: pointer;
+  border: none;
+  padding: 0;
   transition: 0.3s;
 }
 
+.portfolio-tool img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: transform 0.3s;
+}
+
+.portfolio-tool:hover img {
+  transform: scale(1.15);
+}
+
+/* Footer row containing store links and expand button */
+.portfolio-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  margin-top: auto; /* Push to bottom of card body */
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Store links (Play Store / App Store badges) */
+.portfolio-store-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.portfolio-store-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.portfolio-store-link i {
+  font-size: 15px;
+  color: #4da6ff;
+}
+
+.portfolio-store-link:hover {
+  background: rgba(77, 166, 255, 0.08);
+  border-color: rgba(77, 166, 255, 0.4);
+  color: #4da6ff;
+}
+
+/* Expandable details button */
+.portfolio-expand-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid rgba(77, 166, 255, 0.3);
+  color: #4da6ff;
+  font-family: "montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04ex;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
 .portfolio-expand-btn i {
-  font-size: 18px;
+  font-size: 16px;
   transition: transform 0.3s ease;
 }
 
 .portfolio-expand-btn:hover {
-  background: #4da6ff;
-  color: #000;
-  box-shadow: 0 0 15px rgba(77, 166, 255, 0.35);
+  background: rgba(77, 166, 255, 0.08);
+  border-color: #4da6ff;
+  color: #fff;
 }
 
 .portfolio-card.active .portfolio-expand-btn {
-  background: #4da6ff;
-  color: #000;
+  background: rgba(77, 166, 255, 0.12);
+  border-color: #4da6ff;
+  color: #fff;
 }
 
 .portfolio-card.active .portfolio-expand-btn i {
-  transform: rotate(45deg);
+  transform: rotate(180deg);
 }
 
 .portfolio-detail {
@@ -1173,9 +1235,10 @@ section {
 }
 
 .portfolio-card.active .portfolio-detail {
-  max-height: 300px;
+  max-height: 350px; /* Allow slightly more height for full text */
   opacity: 1;
   margin-top: 14px;
+  margin-bottom: 10px;
 }
 
 .portfolio-detail p {
@@ -1183,9 +1246,7 @@ section {
   font-family: "montserrat", sans-serif;
   font-size: 13px;
   line-height: 1.7;
-  margin: 0;
-  padding-top: 12px;
-  border-top: 1px solid #2d2d2d;
+  margin: 0 0 10px 0;
 }
 
 @media (max-width: 767px) {

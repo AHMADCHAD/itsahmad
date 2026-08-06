@@ -75,3 +75,10 @@
 71. [x] Full SEO + keyword optimization: title, description, keywords, Open Graph, Twitter, geo tags, canonical, JSON-LD schema
 72. [x] Add keyword-rich on-page content (hero, about, portfolio, services)
 73. [x] Add robots.txt and sitemap.xml
+74. [x] Add "Tallah Admin" portfolio project (shop registration + admin approval + booking management dashboard)
+75. [x] Add original brand tool icons (via simple-icons CDN) to each portfolio project card
+76. [x] Fix broken tool icons: replace CDN (reactnative 404, openai 404) with locally-hosted colorized brand SVGs in assets/img/tools/
+77. [x] Remove icon name labels so only the authentic brand logos show; fix black SVGs by injecting the correct brand fill color into each SVG
+78. [x] Upgrade to authentic colorful brand logos using Devicon library (react, redux, firebase, tailwind, javascript) + official OpenAI mark, downloaded locally
+79. [x] Simplify tool icons: remove background/border, make small (22px), right-align in card
+80. [x] Add Play Store / App Store download links to each portfolio card (placeholder URLs to fill in)

@@ -361,4 +361,21 @@
    * Initiate Pure Counter
    */
   new PureCounter();
+
+  // Coming Soon modal trigger
+  document.addEventListener('click', function (e) {
+    const link = e.target.closest('.coming-soon');
+    if (link) {
+      e.preventDefault();
+      const appName = link.dataset.app || 'this';
+      const message = `Coming soon – ${appName} app is under development.`;
+      const msgEl = document.getElementById('comingSoonMessage');
+      if (msgEl) msgEl.textContent = message;
+      const modalEl = document.getElementById('comingSoonModal');
+      if (modalEl) {
+        const modal = new bootstrap.Modal(modalEl);
+        modal.show();
+      }
+    }
+  });
 })();
