@@ -83,3 +83,4 @@
 79. [x] Simplify tool icons: remove background/border, make small (22px), right-align in card
 80. [x] Add Play Store / App Store download links to each portfolio card (placeholder URLs to fill in)
         Yes
+        no
