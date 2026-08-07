@@ -599,6 +599,11 @@ section {
   align-items: center;
 }
 
+.about-stack-row span img {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
 .about-stack-row span {
   display: inline-flex;
   align-items: center;
