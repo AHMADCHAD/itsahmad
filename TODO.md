@@ -82,5 +82,4 @@
 78. [x] Upgrade to authentic colorful brand logos using Devicon library (react, redux, firebase, tailwind, javascript) + official OpenAI mark, downloaded locally
 79. [x] Simplify tool icons: remove background/border, make small (22px), right-align in card
 80. [x] Add Play Store / App Store download links to each portfolio card (placeholder URLs to fill in)
-        Yes
-        no n
+        Yes v
