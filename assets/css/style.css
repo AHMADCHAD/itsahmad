@@ -918,6 +918,99 @@ section {
   transition: transform 0.5s ease;
 }
 
+/* SportsNova in-development app artwork */
+.sportsnova-thumb {
+  background: linear-gradient(145deg, #102c25, #071711 72%);
+}
+
+.sportsnova-art {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 48%, rgba(40, 194, 123, 0.2), transparent 58%);
+}
+
+.sportsnova-court {
+  position: absolute;
+  width: 76%;
+  height: 66%;
+  border: 2px solid rgba(94, 226, 156, 0.42);
+  border-radius: 10px;
+  transform: rotate(-13deg);
+  box-shadow: 0 0 36px rgba(44, 212, 129, 0.12), inset 0 0 30px rgba(44, 212, 129, 0.06);
+}
+
+.sportsnova-court::before,
+.sportsnova-court::after {
+  content: "";
+  position: absolute;
+  background: rgba(94, 226, 156, 0.35);
+}
+
+.sportsnova-court::before { width: 1px; height: 100%; left: 50%; }
+.sportsnova-court::after { height: 1px; width: 100%; top: 50%; }
+
+.sportsnova-center-circle {
+  position: absolute;
+  width: 27%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(94, 226, 156, 0.38);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sportsnova-app-icon {
+  z-index: 1;
+  width: 88px;
+  height: 88px;
+  display: grid;
+  place-items: center;
+  color: #092117;
+  font-size: 48px;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 24px;
+  background: linear-gradient(145deg, #7cf0ad, #28c27b);
+  box-shadow: 0 14px 42px rgba(0,0,0,.42);
+}
+
+.sportsnova-status {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 11px;
+  border: 1px solid rgba(124,240,173,.38);
+  border-radius: 30px;
+  color: #a9f5c8;
+  background: rgba(4, 22, 14, .82);
+  font: 600 11px "montserrat", sans-serif;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.sportsnova-wordmark {
+  position: absolute;
+  bottom: 18px;
+  z-index: 1;
+  color: #fff;
+  font: 700 20px "montserrat", sans-serif;
+  letter-spacing: .02em;
+}
+
+.sportsnova-wordmark span { color: #65e49c; }
+.sportsnova-inline-status { color: #79e7a7; font-size: .85em; }
+.sportsnova-thumb .portfolio-overlay { z-index: 3; }
+.sportsnova-thumb:hover .sportsnova-app-icon { transform: translateY(-4px); }
+.sportsnova-app-icon { transition: transform .35s ease; }
+
 .portfolio-card:hover .portfolio-thumb img {
   transform: scale(1.08);
 }
